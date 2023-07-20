@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Document</title>
+</head>
+<body id="body" class="tema_1">
+    <main id="main">
+        <div class="container container_superior" >
+            <h1 class="calc">CALCULADORA</h1>
+            <div class="temas">
+                <h1 class="tema_titulo">TEMA</h1>
+                <!-- <input class="tema" type="checkbox" onchange="trocar_tema()"> -->
+                <input class="tema" type="checkbox" id="switch" onchange="trocar_tema()" /><label for="switch">Toggle</label>
+            </div>
+        </div>
+
+
+        <div class="container container_central">
+            <input class="input" id="disp" type="text" value="" disabled>
+        </div>
+
+
+        <div class="container container_inferior">
+            <div class="box box_7"><button class="botao botao_7" onclick="insertNum(7)">7</button></div>
+            <div class="box box_8"><button class="botao botao_8" onclick="insertNum(8)">8</button></div>
+            <div class="box box_9"><button class="botao botao_9" onclick="insertNum(9)">9</button></div>    
+            <div class="box box_del"><button class="botao botao_del" onclick="backspace()">DEL</button></div>    
+
+            <div class="box box_4"><button class="botao botao_4" onclick="insertNum(4)">4</button></div>
+            <div class="box box_5"><button class="botao botao_5" onclick="insertNum(5)">5</button></div>
+            <div class="box box_6"><button class="botao botao_6" onclick="insertNum(6)">6</button></div>  
+            <div class="box box_ad"><button class="botao botao_ad" onclick="insertNum('+')">+</button></div>  
+
+            <div class="box box_1"><button class="botao botao_1" onclick="insertNum(1)">1</button></div>
+            <div class="box box_2"><button class="botao botao_2" onclick="insertNum(2)">2</button></div>
+            <div class="box box_3"><button class="botao botao_3" onclick="insertNum(3)">3</button></div> 
+            <div class="box box_sub"><button class="botao botao_sub" onclick="insertNum('-')">-</button></div> 
+                
+            <div class="box box_point"><button class="botao botao_point" onclick="insertNum('.')">.</button></div>
+            <div class="box box_0"><button class="botao botao_0" onclick="insertNum(0)">0</button></div>              
+            <div class="box box_div"><button class="botao botao_div" onclick="insertNum('/')">/</button></div> 
+            <div class="box box_mult"><button class="botao botao_mult" onclick="insertNum('*')">x</button></div> 
+
+            <div class="box box_reset"><button class="botao botao_reset" onclick="reset()">RESET</button></div> 
+            <div class="box box_result"><button class="botao botao_result" onclick="result()">=</button></div> 
+        </div>
+    </main>
+    <script src="prog.js"></script>
+</body>
+</html>
